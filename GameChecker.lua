@@ -6,4 +6,5 @@ elseif game.PlaceId == BlendingSim2 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Snow-Lova/SnowHub/refs/heads/main/2.lua"))()
 else
     warn("Game not supported")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Snow-Lova/SnowHub/refs/heads/main/Unsupported.lua"))()
 end
