@@ -1,7 +1,7 @@
 local TeleportService = game:GetService("TeleportService")
 
 local PLACE_ID1 = 537413528 
-local PLACE_ID1 = 6170705260 
+local PLACE_ID2 = 6170705260 
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
