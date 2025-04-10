@@ -39,7 +39,14 @@ local CZxqB9Ft6WpYoLmE1rAV = {
     InputStroke = Color3.fromRGB(160, 175, 190),
     PlaceholderColor = Color3.fromRGB(100, 115, 130)
 }
-
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "SnowHub",
+   Icon = "heart", 
+   LoadingTitle = "Dead Rails",
+   LoadingSubtitle = "By SnowLover",
+   Theme = CZxqB9Ft6WpYoLmE1rAV
+})
 local function R8kzB1nDqV4YwXmE7Hp3()
   local Players = game:GetService("Players")
   local StarterGui = game:GetService("StarterGui")
@@ -173,14 +180,6 @@ local function mVR6KytPdWJqXoZBA19f()
     end
 end
 
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({
-   Name = "SnowHub",
-   Icon = "heart", 
-   LoadingTitle = "Dead Rails",
-   LoadingSubtitle = "By SnowLover",
-   Theme = CZxqB9Ft6WpYoLmE1rAV
-})
 local Tab1 = Window:CreateTab("Game", "ellipsis")
 local Tab5 = Window:CreateTab("Credits", "user")
 R8kzB1nDqV4YwXmE7Hp3()
@@ -190,6 +189,7 @@ local Section = Tab5:CreateSection("Tester")
 local Label = Tab5:CreateLabel("Thanks to 0o7m4 for testing and the mental support he gave me!", "key")
 local Section = Tab5:CreateSection("Other")
 local Label = Tab5:CreateLabel("And you! " .. player.Name .. " for using this script", "users")
+
 local Toggle = Tab1:CreateToggle({
     Name = "Bring Nearby",
     CurrentValue = false,
@@ -201,6 +201,7 @@ local Toggle = Tab1:CreateToggle({
         end
     end,
 })
+
 local espToggle = Tab1:CreateToggle({
     Name = "ESP Items and Mobs",
     CurrentValue = false,
