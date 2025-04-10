@@ -47,11 +47,6 @@ local function R8kzB1nDqV4YwXmE7Hp3()
   local player = Players.LocalPlayer
 end
 
-local function J2cVm8RXaTzLq7oK5NbE()
-  local Tab1 = Window:CreateTab("Game", "ellipsis")
-  local Tab5 = Window:CreateTab("Credits", "user")
-end
-
 local function aG7xM2pLq9TfWvK1zYdE()
   R8kzB1nDqV4YwXmE7Hp3()
   local Section = Tab5:CreateSection("Founder")
@@ -186,8 +181,15 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "By SnowLover",
    Theme = CZxqB9Ft6WpYoLmE1rAV
 })
-J2cVm8RXaTzLq7oK5NbE()
-aG7xM2pLq9TfWvK1zYdE()
+local Tab1 = Window:CreateTab("Game", "ellipsis")
+local Tab5 = Window:CreateTab("Credits", "user")
+R8kzB1nDqV4YwXmE7Hp3()
+local Section = Tab5:CreateSection("Founder")
+local Label = Tab5:CreateLabel("SnowLover", "crown")
+local Section = Tab5:CreateSection("Tester")
+local Label = Tab5:CreateLabel("Thanks to 0o7m4 for testing and the mental support he gave me!", "key")
+local Section = Tab5:CreateSection("Other")
+local Label = Tab5:CreateLabel("And you! " .. player.Name .. " for using this script", "users")
 local Toggle = Tab1:CreateToggle({
     Name = "Bring Nearby",
     CurrentValue = false,
