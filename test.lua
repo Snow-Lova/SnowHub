@@ -47,25 +47,12 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "By SnowLover",
    Theme = CZxqB9Ft6WpYoLmE1rAV
 })
-local function R8kzB1nDqV4YwXmE7Hp3()
-  local Players = game:GetService("Players")
-  local StarterGui = game:GetService("StarterGui")
-  local TweenService = game:GetService("TweenService")
-  local player = Players.LocalPlayer
-end
-
-local function aG7xM2pLq9TfWvK1zYdE()
-  R8kzB1nDqV4YwXmE7Hp3()
-  local Section = Tab5:CreateSection("Founder")
-  local Label = Tab5:CreateLabel("SnowLover", "crown")
-  local Section = Tab5:CreateSection("Tester")
-  local Label = Tab5:CreateLabel("Thanks to 0o7m4 for testing and the mental support he gave me!", "key")
-  local Section = Tab5:CreateSection("Other")
-  local Label = Tab5:CreateLabel("And you! " .. player.Name .. " for using this script", "users")
-end
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local TweenService = game:GetService("TweenService")
+local player = Players.LocalPlayer
 
 local function Z9pLdX3qAeK7YvMtR1Cf()
-  R8kzB1nDqV4YwXmE7Hp3()
   local runtimeItems = workspace:FindFirstChild("RuntimeItems")
   if not runtimeItems then return end
   local ch = player.Character or player.CharacterAdded:Wait()
@@ -73,7 +60,6 @@ local function Z9pLdX3qAeK7YvMtR1Cf()
 end
 
 local function Xq7PfMLBvA3KzW9YtnRc()
-  R8kzB1nDqV4YwXmE7Hp3()
   for _, item in ipairs(runtimeItems:GetDescendants()) do
     if item:IsA("Model") then
       if item.PrimaryPart then
@@ -124,7 +110,6 @@ local function GpZVt5xBRkW1CaoEyLq9()
 end
 
 local function TqL4XjKNeFZRAwv8oMY9()
-    R8kzB1nDqV4YwXmE7Hp3()
     GpZVt5xBRkW1CaoEyLq9()
 
     -- ESP for Items 
@@ -182,7 +167,6 @@ end
 
 local Tab1 = Window:CreateTab("Game", "ellipsis")
 local Tab5 = Window:CreateTab("Credits", "user")
-R8kzB1nDqV4YwXmE7Hp3()
 local Section = Tab5:CreateSection("Founder")
 local Label = Tab5:CreateLabel("SnowLover", "crown")
 local Section = Tab5:CreateSection("Tester")
